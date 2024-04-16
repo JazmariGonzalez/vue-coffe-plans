@@ -2,7 +2,7 @@
     <div class="plan">
          <div class="description">
            <span class="title">  
-             {{ name }} 👍 Likes: {{ likes }} 
+             {{ name }} 
            </span>
          </div>
        </div>
@@ -14,10 +14,6 @@
       type: String,
       required: true,
       //default: "Plan sin nombre",
-    }, 
-    likes: {
-      type: Number,
-      default: 0,
     }
   });
   </script>
