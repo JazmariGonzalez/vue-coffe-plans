@@ -1,3 +1,7 @@
+<script setup>
+import planPicker from './components/plan-picker.vue';
+</script>
+ 
 <template>
   <header>
     <div>
@@ -5,21 +9,17 @@
       <img src="./assets/logo.png" alt="logo">
     </div>
   </header>
-
+ 
   <div class="content">
-    <Title :title="pageTitle" />
-    <Subtitle :subtitle="pageSubtitle" />
-    <plan-picker :plans="plan" />
+    <h1 class="title">Coffee Plans</h1>
+ 
+    <h2 class="subtitle">
+      Viajamos por el mundo para encontrar el mejor café de origen único para ti
+    </h2>
+  <plan-picker />
   </div>
 </template>
-
-<script setup>
-import planPicker from './components/plan-picker.vue';
-import Title from './components/planTitle.vue';
-import Subtitle from './components/planSubtitle.vue';
-
-</script>
-
+ 
 <style scoped>
 header {
   line-height: 1.5;
