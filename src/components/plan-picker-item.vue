@@ -1,5 +1,5 @@
 <template>
-    <div  
+    <div 
     @click="select"
     :class="{'select-plan':isSelected}" 
     class="plan">
